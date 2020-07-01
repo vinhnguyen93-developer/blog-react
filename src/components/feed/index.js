@@ -1,4 +1,5 @@
 import React from "react";
+import './styles.css';
 
 /*
     imageUrl: String;
@@ -10,17 +11,21 @@ import React from "react";
 const Feed = (props) => {
 
     return (
-        <div>
-            <img src={props.imageUrl} alt=""/>
-            <div>
-                <span>{props.title}</span>
-                <div>
-                    <span>{props.createdDate}</span>
-                    <span>{props.topic}</span>
-                    <span>{props.desc}</span>
-                </div>
-            </div>
+      <div className="feed">
+        <img src={props.imageUrl} alt=""/>
+        <div className="body">
+          <h3>
+            <a href="#">{props.title}</a>
+          </h3>
+          <div className="text">
+            <span>{props.createdDate}</span>
+            <span>
+              <a href="#">{props.topic}</a>
+            </span>
+            <p>{props.desc}</p>
+          </div>
         </div>
+      </div>
     );
 };
 
