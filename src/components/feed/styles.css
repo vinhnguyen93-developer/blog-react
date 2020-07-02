@@ -14,7 +14,7 @@
 }
 
 .feed .body h3 {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 15px;
   font-size: 28px;
 }
@@ -37,4 +37,9 @@
 
 .feed .body .text p {
   color: #727272;
+}
+
+.feed .body p .btn-custom {
+  text-decoration: none;
+  color: #1eafed;
 }

@@ -23,6 +23,9 @@ const Feed = (props) => {
               <a href="#">{props.topic}</a>
             </span>
             <p>{props.desc}</p>
+            <p>
+              <a href="#" className="btn-custom">Read More</a>
+            </p>
           </div>
         </div>
       </div>
