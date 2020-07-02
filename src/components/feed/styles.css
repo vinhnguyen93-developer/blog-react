@@ -1,0 +1,45 @@
+.feed {
+  display: flex;
+  padding: 40px;
+}
+
+.feed img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.feed .body {
+  padding-left: 1.5rem;
+}
+
+.feed .body h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.feed .body h3 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.feed .body .text span {
+  font-size: 14px;
+  margin: 0 10px 0 0;
+  color: #bfbfbf;
+}
+
+.feed .body .text span a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.feed .body .text p {
+  color: #727272;
+}
+
+.feed .body p .btn-custom {
+  text-decoration: none;
+  color: #1eafed;
+}
