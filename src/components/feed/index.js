@@ -15,16 +15,16 @@ const Feed = (props) => {
         <img src={props.imageUrl} alt=""/>
         <div className="body">
           <h3>
-            <a href="#">{props.title}</a>
+            <a href="/">{props.title}</a>
           </h3>
           <div className="text">
             <span>{props.createdDate}</span>
             <span>
-              <a href="#">{props.topic}</a>
+              <a href="/">{props.topic}</a>
             </span>
             <p>{props.desc}</p>
             <p>
-              <a href="#" className="btn-custom">Read More</a>
+              <a href="/" className="btn-custom">Read More</a>
             </p>
           </div>
         </div>
