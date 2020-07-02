@@ -1,5 +1,6 @@
 import React from "react";
 import Feed from "../../components/feed";
+import withLayout from "../../shared/hocs/withLayout";
 
 const Home = (props) => {
 
@@ -16,4 +17,4 @@ const Home = (props) => {
     );
 };
 
-export default Home;
+export default withLayout(Home);
