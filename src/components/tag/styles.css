@@ -1,0 +1,34 @@
+.tag {
+  margin-bottom: 40px;
+  padding: 0 25px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.tag .heading {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.tag .tag-cloud {
+  padding: 0;
+}
+
+.tag .tag-cloud a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 7px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #000000;
+  border: 1px solid #ccc;
+  font-size: 11px;
+}
+
+.tag .tag-cloud a:hover {
+  border: 1px solid #000;
+}
