@@ -13,7 +13,7 @@ function withLayout(Component) {
                         <a href="/back-end">Back-End</a>
                         <a href="/dev-ops">DevOps</a>
                     </div>
-                    <div>
+                    <div style={{ position: "sticky", bottom: 50 }}>
                         <h1 className="logo">
                             <a href="/">
                                 Vinh

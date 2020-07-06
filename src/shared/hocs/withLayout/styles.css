@@ -1,7 +1,6 @@
 .app-layout {
     display: flex;
     width: 100vw;
-    height: 100vh;
 }
 
 .app-layout a {
@@ -16,21 +15,40 @@
     width: 25%;
     max-width: 350px;
     padding-bottom: 40px;
+    padding-left: 25px;
 }
 
 .app-layout .left-section {
     border-right: 1px solid #e6e6e6;
     justify-content: space-between;
-    padding-left: 25px;
 }
 
 .app-layout .right-section {
     border-left: 1px solid #e6e6e6;
     background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-layout .right-section input {
+    padding: 10px;
+    width: 250px;
+    padding: 17px 10px;
+}
+
+.app-layout .right-section .categories {
+    width: 250px;
+    padding-top: 30px;
 }
 
 .app-layout .center-section {
     flex-grow: 2;
+}
+
+.app-layout .main-menu {
+    position: sticky;
+    top: 60px;
 }
 
 .app-layout .main-menu a {
