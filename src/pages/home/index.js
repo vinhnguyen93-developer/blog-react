@@ -1,12 +1,34 @@
 import React from "react";
 import Feed from "../../components/feed";
+import withLayout from "../../shared/hocs/withLayout";
 
 const Home = (props) => {
 
     return (
         <div>
             <Feed 
-                imageUrl="https://avatars0.githubusercontent.com/u/29276005?s=88&u=c9dde4a310d43714ccd2ce2d94d7f0118e6aa2e7&v=4"
+                imageUrl="https://lh3.googleusercontent.com/proxy/TUWfAyJMZ4L18CwP6jgCnukVvzBWJaQ4EvokBPltwd0SUyZbnP59WklVHrQ56zAMOYxuRAhwN1crwaHNksLx_fO3njfaMhCjwT9NEuCqMFEiWRsidrswGafOms2ThDoK2g"
+                title="Vinh Ha Long"
+                createdDate="17/05/2020"
+                topic="Travel"
+                desc="Du lich Vinh Ha Long"
+            />
+            <Feed 
+                imageUrl="https://lh3.googleusercontent.com/proxy/TUWfAyJMZ4L18CwP6jgCnukVvzBWJaQ4EvokBPltwd0SUyZbnP59WklVHrQ56zAMOYxuRAhwN1crwaHNksLx_fO3njfaMhCjwT9NEuCqMFEiWRsidrswGafOms2ThDoK2g"
+                title="Vinh Ha Long"
+                createdDate="17/05/2020"
+                topic="Travel"
+                desc="Du lich Vinh Ha Long"
+            />
+            <Feed 
+                imageUrl="https://lh3.googleusercontent.com/proxy/TUWfAyJMZ4L18CwP6jgCnukVvzBWJaQ4EvokBPltwd0SUyZbnP59WklVHrQ56zAMOYxuRAhwN1crwaHNksLx_fO3njfaMhCjwT9NEuCqMFEiWRsidrswGafOms2ThDoK2g"
+                title="Vinh Ha Long"
+                createdDate="17/05/2020"
+                topic="Travel"
+                desc="Du lich Vinh Ha Long"
+            />
+            <Feed 
+                imageUrl="https://lh3.googleusercontent.com/proxy/TUWfAyJMZ4L18CwP6jgCnukVvzBWJaQ4EvokBPltwd0SUyZbnP59WklVHrQ56zAMOYxuRAhwN1crwaHNksLx_fO3njfaMhCjwT9NEuCqMFEiWRsidrswGafOms2ThDoK2g"
                 title="Vinh Ha Long"
                 createdDate="17/05/2020"
                 topic="Travel"
@@ -16,4 +38,4 @@ const Home = (props) => {
     );
 };
 
-export default Home;
+export default withLayout(Home);
