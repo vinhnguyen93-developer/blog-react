@@ -5,18 +5,7 @@
   width: 100%;
 }
 
-.tag .heading {
-  font-size: 20px;
-  font-weight: normal;
-  font-style: italic;
-  margin-bottom: 30px;
-}
-
-.tag .tag-cloud {
-  padding: 0;
-}
-
-.tag .tag-cloud a {
+.tag .tag-cloud-link {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -24,11 +13,12 @@
   margin-bottom: 7px;
   margin-right: 4px;
   border-radius: 4px;
-  color: #000000;
   border: 1px solid #ccc;
   font-size: 11px;
+  cursor: pointer;
+  transition: 0.3s all ease;
 }
 
-.tag .tag-cloud a:hover {
+.tag .tag-cloud-link:hover {
   border: 1px solid #000;
 }
