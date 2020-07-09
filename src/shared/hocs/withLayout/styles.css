@@ -120,3 +120,29 @@
     font-weight: lighter;
     font-size: 0.89em;
 }
+
+@media only screen and (max-width: 600px) {
+    .app-layout > .left-section,.right-section {
+        display: none;
+    }
+
+    .app-layout > .center-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .app-layout > .left-section,.right-section {
+        display: none;
+    }
+
+    .app-layout > .center-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .app-layout > .right-section {
+        display: none;
+    }
+}
