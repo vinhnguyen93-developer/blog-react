@@ -1,0 +1,24 @@
+.tag {
+  margin-bottom: 40px;
+  padding: 0 25px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.tag .tag-cloud-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 7px;
+  margin-right: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.tag .tag-cloud-link:hover {
+  border: 1px solid #000;
+}
