@@ -17,7 +17,13 @@ const Categories = (props) => {
       <h3 className="sidebar-heading">{props.title}</h3>
       <ul className="categories">
         { props.items.map((item, index) => {
-          return <li className={props.itemClassName} key={index}>{item.title}<span>({item.count})</span></li>;
+          if(item.count === 1) {
+            return <li className={props.itemClassName} key={index}>
+                {item.title}<span style={{letterSpacing: 2 + "px"}}>({item.count})</span>
+              </li>;
+          } else {
+            return <li className={props.itemClassName} key={index}>{item.title}<span>({item.count})</span></li>;
+          }
         })}
       </ul>
     </div>
