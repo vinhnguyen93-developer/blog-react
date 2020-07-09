@@ -1,0 +1,28 @@
+.sidebar-box {
+  margin-bottom: 40px;
+  padding: 0 25px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.sidebar-box .sidebar-heading {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.sidebar-box .categories li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dee2e6;
+  list-style: none;
+  cursor: pointer;
+}
+
+.sidebar-box .categories li span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ccc;
+}
