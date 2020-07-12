@@ -13,15 +13,15 @@ import './styles.css';
 
 const Comment = (props) => {
   return (
-    <div className={ props.className || "comment"}>
+    <div className={props.className || "comment"}>
       <div className="vcard">
-        <img src={ props.createdBy.avatarUrl} alt="#" />
+        <img src={props.createdBy.avatarUrl} alt="#" />
       </div>
       <div className="comment-body">
-        <h3>{ props.createdBy.displayName }</h3>
-        <div className="meta">{ props.createdAt }</div>
-        <p className="content">{ props.content }</p>
-        <p className="reply">Reply</p>
+        <h3>{props.createdBy.displayName}</h3>
+        <div className="meta">{props.createdAt}</div>
+        <p className="content">{props.content}</p>
+        <button className="reply">Reply</button>
       </div>
     </div>
   );
