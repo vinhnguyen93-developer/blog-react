@@ -13,7 +13,7 @@ import './styles.css';
 
 const Comment = (props) => {
   return (
-    <div className="comment">
+    <div className={ props.className || "comment"}>
       <div className="vcard">
         <img src={ props.createdBy.avatarUrl} alt="#" />
       </div>
