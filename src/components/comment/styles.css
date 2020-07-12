@@ -1,0 +1,58 @@
+.comment {
+  padding: 0;
+  margin: 0 0 30px 0;
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+.comment .vcard {
+  width: 80px;
+  float: left;
+}
+
+.comment .vcard img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.comment .comment-body {
+  float: right;
+  width: calc(100% - 80px);
+}
+
+.comment .comment-body h3 {
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+.comment .comment-body .meta {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: .1em;
+  color: #ccc;
+}
+
+.comment .comment-body .content {
+  margin-bottom: 15px;
+}
+
+.comment .comment-body .reply {
+  padding: 5px 10px;
+  background: #e6e6e6;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  border-radius: 4px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.comment .comment-body .reply:hover {
+  color: #fff;
+  background: black;
+}
