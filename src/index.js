@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import Route from "./shared/libs/CustomRoute";
 import * as serviceWorker from './serviceWorker';
 import "./index.css";
 
 import Home from './pages/home';
+import BlogDetail from "./pages/blog";
 
 ReactDOM.render(
-  <div>
-    <Home />
-  </div>
+  <Router>
+    <Switch>
+      <Route exact component={Home} path="/"/>
+      <Route component={BlogDetail} path="/blog/:id"/>
+    </Switch>
+  </Router>
   ,document.getElementById('root')
 );
 

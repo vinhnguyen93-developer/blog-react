@@ -1,6 +1,7 @@
 import React from "react";
 import Feed from "../../components/feed";
 import withLayout from "../../shared/hocs/withLayout";
+import Comment from "../../components/comment";
 
 const Home = (props) => {
 
@@ -62,6 +63,7 @@ const Home = (props) => {
                 topic="Travel"
                 desc="Du lich Vinh Ha Long"
             />
+
         </div>
     );
 };
