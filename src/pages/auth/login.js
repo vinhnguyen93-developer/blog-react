@@ -12,6 +12,7 @@ const Login = (props) => {
                         <input className="text-box" type="password" placeholder="Password" />
                     </form>
                     <button className="btn">Login</button>
+                    <p className="text-form">Not register? <a href="#">Create an account</a></p>
                 </div>
             </div>
         </div>
