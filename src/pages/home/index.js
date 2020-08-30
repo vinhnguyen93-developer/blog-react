@@ -1,7 +1,6 @@
 import React from "react";
 import Feed from "../../components/feed";
 import withLayout from "../../shared/hocs/withLayout";
-import Comment from "../../components/comment";
 
 const Home = (props) => {
 
