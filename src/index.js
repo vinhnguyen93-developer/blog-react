@@ -6,6 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import "./index.css";
 
 import Home from './pages/home';
+import Login from './pages/auth/login';
+import Register from './pages/auth/register';
+
 import BlogDetail from "./pages/blog";
 
 ReactDOM.render(
@@ -13,6 +16,8 @@ ReactDOM.render(
     <Switch>
       <Route exact component={Home} path="/"/>
       <Route component={BlogDetail} path="/blog/:id"/>
+      <Route component={Login} path="/login"/>
+      <Route component={Register} path="/register"/>
     </Switch>
   </Router>
   ,document.getElementById('root')

@@ -1,10 +1,8 @@
 import React from "react";
-import { useHistory, useParams, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const BlogDetail = (props) => {
-    const location = useLocation();
     const history = useHistory();
-    const params = useParams();
 
     return (
         <div>
