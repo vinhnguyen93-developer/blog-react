@@ -69,3 +69,15 @@
 
     cursor: pointer;
 }
+
+.login-form .container .col .text-form {
+    margin-top: 20px;
+
+    font-size: 12px;
+}
+
+.login-form .container .col .text-form a {
+    text-decoration: none;
+    
+    color: #0394fc;
+}
