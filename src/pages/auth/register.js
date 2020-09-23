@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+import { useHistory } from "react-router-dom"
 import "./styles.css";
 
 import ApiService from "../../shared/services/apiService";
@@ -7,6 +8,7 @@ const Register = (props) => {
     const emailRef = useRef();
     const nameRef = useRef();
     const passwordRef = useRef();
+    const history = useHistory();
 
     const handleSubmitForm = (e) => {
         e.preventDefault();
@@ -23,7 +25,7 @@ const Register = (props) => {
                 payload: data
             }
         ).then(res => {
-            window.location.assign("/login")
+            history.push("/login")
         }).catch(err => console.log(err))
     }
 

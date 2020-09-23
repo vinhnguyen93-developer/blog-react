@@ -52,10 +52,11 @@
     outline: none;
 }
 
-.login-form .container .col .btn {
+.login-form .container .col .form .btn {
     width: 120px;
     margin-top: 15px;
     padding: 7px 15px;
+    align-self: center;
 
     border: none;
     border-radius: 3px;
