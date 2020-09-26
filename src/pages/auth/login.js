@@ -1,10 +1,12 @@
 import React, {useRef} from "react";
+import { useHistory } from "react-router-dom"
 import ApiService from "../../shared/services/apiService";
 import "./styles.css";
 
 const Login = (props) => {
     const emailRef = useRef();
     const passwordRef = useRef();
+    const history = useHistory();
 
     const handleSubmitForm = (e) => {
         e.preventDefault();
@@ -21,7 +23,7 @@ const Login = (props) => {
             }
         ).then(({data}) => {
             localStorage.setItem("token", data.data.token)
-            window.location.assign("/")
+            history.push("/");
 
         }).catch(err => console.log(err))
     }
