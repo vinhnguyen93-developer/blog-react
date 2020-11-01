@@ -1,0 +1,148 @@
+.admin-layout {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.admin-layout a {
+    text-decoration: none;
+}
+
+.admin-layout > * {
+    padding-top: 60px;
+}
+
+.admin-layout > .left-section {
+    width: 25%;
+    max-width: 280px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+}
+
+.admin-layout .left-section {
+    border-right: 1px solid #e6e6e6;
+    justify-content: space-between;
+}
+
+.admin-layout .center-section {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.admin-layout .center-section .center-container .form-group {
+    margin: 10px 0;
+}
+
+.admin-layout .center-section .center-container .form-group label {
+    display: block;
+}
+
+.admin-layout .center-section .center-container .form-group input {
+    padding: 10px;
+    width: 350px;
+    
+    border-radius: 5px;
+}
+
+.admin-layout .center-section .center-container .form-group textarea {
+    padding: 10px;
+    width: 350px;
+    
+    border-radius: 5px;
+}
+
+.admin-layout .center-section .center-container .btn {
+    margin-top: 20px;
+    padding: 8px 20px;
+
+    background-color: #1da1f2;
+    color: white;
+
+    border-radius: 5px;
+    border: none;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-layout .main-menu {
+    position: sticky;
+    top: 60px;
+}
+
+.admin-layout .main-menu a {
+    padding: 5px 0 10px 0;
+    font-weight: 550;
+    font-size: 1.1em;
+    color: #000000;
+    width: fit-content;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.admin-layout .main-menu a.active {
+    color: #1eafed;
+}
+
+.admin-layout .main-menu a::after {
+    content:"";
+    height: 2px;
+    bottom: 7px;
+    left: 0;
+    right: 0;
+    background-color: #1eafed;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: scaleX(0);
+}
+
+.admin-layout .main-menu a:hover:after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.admin-layout .main-menu a.active::after{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.admin-layout .logo {
+    font-size: 3rem;
+    overflow: hidden;
+    line-height: 1.1;
+    padding: 20px 0;
+}
+
+.admin-layout .logo a {
+    display: inline-block;
+    padding: 10px 0;
+    color: #000000;
+    overflow: hidden;
+}
+
+.admin-layout .logo span {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .admin-layout > .left-section {
+        display: none;
+    }
+
+    .admin-layout > .center-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .admin-layout > .left-section {
+        display: none;
+    }
+
+    .admin-layout > .center-section {
+        width: 100%;
+    }
+}
